@@ -82,10 +82,16 @@ header .top .userId{
     display: none;
 }
 
+.greeting{
+    width: 100%;
+    padding: 20px 40px;    
+}
+
 .query .items{
     display: flex;
     justify-content:space-around;
     margin: 20px;
+    padding: 0 50px;
 }
 
 .query .items button{
@@ -110,7 +116,7 @@ section .data .balance div{
     background-color: white;
     margin: 10px;
     width: 250px;
-    height: 120px;
+    height: 150px;
 }
 
 section .data .balance .availableBalance a{
@@ -147,27 +153,134 @@ section .data .balanceQuery{
     margin: 10px;
 }
 
-section .data .balanceQuery ul{
+section .data .balanceQuery .heading ul{
     list-style: none;
     display: flex;
     background-color: #eaeaea;
 }
 
-section .data .balanceQuery ul a{
+section .data .balanceQuery .heading ul a{
     text-decoration: none;
-
+    color: #006778;
 }
 
-section .data .balanceQuery ul li{
-    padding: 20px;
+section .data .balanceQuery .heading ul li{
+    padding: 15px;
     border-top: 2px solid #022737;
 }
 
+section .balanceData{
+    padding: 15px;
+}
 
+section .data .gift{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #022737;
+}
 
+section .balanceData p:nth-child(2){
+    padding: 15px 0;
+    color: #505050;
+}
 
+section .balanceData .features ul{
+    display: flex;
+    justify-content: space-around;
+}
 
+section .balanceData .features ul li{
+    list-style: none;
+}
 
+div.balanceData > div > ul > li > p:nth-child(1){
+    color: #505050
+}
+
+div.balanceData > div > ul > li > p:nth-child(2){
+    color: #022737;
+    font-weight: bold;
+}
+
+section.main{
+    background-color: white;
+    height: auto;
+}
+
+section.main div:first-child{
+    padding: 20px 20%;
+}
+
+section.main h2{
+    font-size: 30px;
+    color: #022737;
+    padding: 20px 0;
+}
+
+section.main div p:nth-child(2){
+    color: #022737;
+    font-weight: bold;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+section.main div p:nth-child(3){
+    padding: 5px 0;
+}
+
+section.main div.caution{
+    padding: 15px 0;
+    height: 40px;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid orangered;
+}
+
+section.main div.caution p{
+    padding: 0 10px;
+}
+
+body > section:nth-child(3) > div.learn{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.learn{
+    margin:  20px 7%;
+}
+
+.learn div{
+    margin: 0 20px;
+}
+
+.learn div:nth-child(2) p:first-child{
+    margin-top: 10px;
+}
+
+.learn div p:nth-child(2){
+    font-size: 24px;
+    color: #022737;
+}
+
+.learn div:nth-child(2) button{
+    border: none;
+    background-color: transparent;
+    color: #022737;
+    font-weight: bold;
+}
+
+.learn img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: burlywood;
+    bottom: 0;
+    padding: 0;
+}
 
 
 footer{
@@ -237,9 +350,15 @@ footer{
 
 
 
+@media only screen and (max-width:930px){
+    .navbar .navbarItems ul li{
+        font-size: 0.95em;
+    }
+}
 
 
-@media only screen and (max-width:900px){
+
+@media only screen and (max-width:768px){
     
     .assistance{
         display: none;
@@ -276,16 +395,13 @@ footer{
         color: #022737;
     }
 
+    section.main div:first-child{
+        padding: 5%;
+    }
 
-
-
-
-
-
-
-
-
-
+    section.main h2{
+        padding: 10px 0;
+    }
 
     .query .items{
         flex-direction: column;
@@ -296,6 +412,7 @@ footer{
         margin: 10px;
     }
 
+    
     .footer .items{
         flex-direction: column;
         justify-content: center;
@@ -327,9 +444,50 @@ footer{
         justify-content: center;
     }
 
-    section .data div{
+    section .data .balance{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin: auto;
     }
+
+    section .data .balance .currentBalance{
+        width: 80%;
+    }
+    section .data .balance .availableBalance{
+        width: 80%;
+    }
+
+    section .data .balance .balanceQuery{
+        width: 80%;
+    }
+
+    .balanceQuery > div.heading{
+        display: flex;
+        justify-content: center;
+    }
+
+    .balanceQuery > div.heading > ul{
+        width: 100%;
+        justify-content: space-between
+    }
+
+    body > section:nth-child(3) > div.learn{
+        background-color: white;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .learn img{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        bottom: 65px;
+        right: -5px;
+        color: bisque;
+        float: right;
+        z-index: 1;
+    }
+
 }
