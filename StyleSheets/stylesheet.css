@@ -251,6 +251,7 @@ button a{
 section .container{
     display:flex;
     justify-content: center;
+    margin-left:10px;
 }
 
 .container .balancequery .headings{
