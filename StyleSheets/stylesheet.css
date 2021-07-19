@@ -251,7 +251,6 @@ button a{
 section .container{
     display:flex;
     justify-content: center;
-    margin-left: 15px;
 }
 
 .container .balancequery .headings{
@@ -654,7 +653,6 @@ footer{
 
     .accessbuttons{
         margin: 0;
-        margin-left: 16px;
     }
 
     .accessbuttons .elements{
@@ -671,7 +669,6 @@ footer{
         display: block;
         height: 279px;
         width: 326px;
-        margin: 20px 34px;
     }
 
     .fa.fa-angle-left, .fa.fa-angle-right{
